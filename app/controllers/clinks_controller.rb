@@ -4,7 +4,8 @@ class ClinksController < ApplicationController
   # GET /clinks
   # GET /clinks.json
   def index
-    @clinks = Clink.all
+    @clinks = Clink.all.order("created_at DESC")
+    @clink = Clink.new
   end
 
   # GET /clinks/1
