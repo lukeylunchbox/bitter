@@ -23,7 +23,7 @@
   <nav class="navbar is-info">
     <div class = "navbar-brand">
     <%= link_to root_path, class: "navbar-item" do %>
-    <h1 class = "title is-5">Bitter</h1>
+    <h1 class = "title is-5">Bitter  <%= image_tag("bitter-logo.png", alt: "bitter logo") %></h1>
     <%end%>
     <div class = "navbar-burger burger" data-target="navbarExample">
     <span></span>
@@ -39,9 +39,9 @@
         <p class = "control">
           <%= link_to "New Clink", new_clink_path, class: "button is-info is-inverted" %>
         </p>
-        <p class = "contorl">Sign Up</p>
-
-
+        <p class = "contorl">
+          <%= link_to 'Sign Up', new_clink_path, class: "button is-info" %>
+        </p>
   </div>
     </div>
       </div>

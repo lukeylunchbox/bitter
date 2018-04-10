@@ -29,7 +29,7 @@ class ClinksController < ApplicationController
 
     respond_to do |format|
       if @clink.save
-        format.html { redirect_to @clink, notice: 'Clink was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Clink was successfully created.' }
         format.json { render :show, status: :created, location: @clink }
       else
         format.html { render :new }

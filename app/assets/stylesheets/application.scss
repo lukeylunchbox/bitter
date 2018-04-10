@@ -13,11 +13,22 @@
  *= require_tree .
  *= require_self
  */
+ 
 
  @import "bulma";
+ @import url('https://fonts.googleapis.com/css?family=Baloo');
+
+ *{
+     font-family: Helvetica, sans-serif
+ }
+
+ html {
+     background-color: rgb(255, 251, 239);
+ }
 
  .navbar-brand .title{
      color: white;
+     font-size: 42px;
  }
 
  .image {
@@ -30,3 +41,44 @@
  .notifications:not(:last-child){
      margin-bottom: 0;
  }
+
+ .title {
+    background-color: rgb(255, 204, 0);
+    font-family: 'Baloo', cursive;
+ }
+
+ .navbar-item {
+    background-color: rgb(255, 204, 0);
+ }
+
+ #navbarExample{
+     background-color: rgb(255, 204, 0);
+ }
+
+ .icon {
+     color: rgb(255, 204, 0);
+ }
+
+ .button.is-info.is-inverted {
+    color: white;
+    background-color: rgb(255, 204, 0);
+    font-size: 1.2em;
+}
+
+.button.is-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(255, 204, 0);
+
+&:hover{
+    background-color: rgb(255, 204, 0);
+}}
+
+.field.is-grouped {
+    padding-top: 9px;
+    padding-right: 9px;
+}
+
+.box {
+    background: #FEFEFE;
+}
