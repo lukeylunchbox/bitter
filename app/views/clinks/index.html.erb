@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Clinks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Clink</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clinks.each do |clink| %>
+      <tr>
+        <td><%= clink.clink %></td>
+        <td><%= link_to 'Show', clink %></td>
+        <td><%= link_to 'Edit', edit_clink_path(clink) %></td>
+        <td><%= link_to 'Destroy', clink, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Clink', new_clink_path %>

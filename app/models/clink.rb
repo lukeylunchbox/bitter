@@ -1,0 +1,2 @@
+class Clink < ApplicationRecord
+end
