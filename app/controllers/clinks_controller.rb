@@ -1,5 +1,6 @@
 class ClinksController < ApplicationController
   before_action :set_clink, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /clinks
   # GET /clinks.json
@@ -15,7 +16,7 @@ class ClinksController < ApplicationController
 
   # GET /clinks/new
   def new
-    @clink = Clink.new
+    @clink = current_user.clinks.build
   end
 
   # GET /clinks/1/edit
@@ -25,7 +26,7 @@ class ClinksController < ApplicationController
   # POST /clinks
   # POST /clinks.json
   def create
-    @clink = Clink.new(clink_params)
+    @clink = current_user.clinks.build(clink_params)
 
     respond_to do |format|
       if @clink.save

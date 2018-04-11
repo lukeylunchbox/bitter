@@ -19,7 +19,7 @@
  @import url('https://fonts.googleapis.com/css?family=Baloo');
 
  *{
-     font-family: Helvetica, sans-serif
+     font-family: Helvetica, sans-serif;
  }
 
  html {
@@ -29,6 +29,7 @@
  .navbar-brand .title{
      color: white;
      font-size: 42px;
+     background: none;
  }
 
  .image {
@@ -51,8 +52,12 @@
     background-color: rgb(255, 204, 0);
  }
 
- #navbarExample{
+ #navbarExample {
      background-color: rgb(255, 204, 0);
+ }
+
+ .navbar-menu {
+    background-color: rgb(255, 204, 0);
  }
 
  .icon {
@@ -82,3 +87,16 @@
 .box {
     background: #FEFEFE;
 }
+
+.title.is-2 {
+    background: none;
+}
+
+.title:not(:last-child), .subtitle:not(:last-child) {
+    background: none;
+}
+
+.title.is-6 {
+    background: none;
+}
+

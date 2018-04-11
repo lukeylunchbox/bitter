@@ -1,6 +1,22 @@
-<h1>Editing Clink</h1>
 
-<%= render 'form', clink: @clink %>
+<div class="section">
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-half">
+				<h1 class="title">Editing Clink</h1>
+				<%= render 'form', clink: @clink %>
+			</div>
+		</div>
+	</div>
+</div>
 
-<%= link_to 'Show', @clink %> |
-<%= link_to 'Back', clinks_path %>
+<nav class="navbar is-fixed-bottom">
+	<div class="navbar-menu">
+		<div class="navbar-item">
+			<div class="field is-grouped">
+				<p class="control">
+					<%= link_to 'Cancel', clinks_path, class: "button is-dark" %>
+				</p>
+		</div>
+	</div>
+</nav>
